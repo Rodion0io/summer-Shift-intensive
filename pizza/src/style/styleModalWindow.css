@@ -1,0 +1,149 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.modal.active{
+    transform: scale(1);
+}
+
+.modal__content{
+    width: 806px;
+    height: 644px;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.modal__content_header{
+    height: 40px;
+    width: 806px;
+}
+
+.modal__content__btn{
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin-right: 24px;
+    margin-left: 758px;
+}
+
+.modal__content__close{
+    margin-top: 16px;
+}
+
+.modal__content__container{
+    width: 678px;
+    height: 556px;
+    margin-right: 64px;
+    margin-left: 64px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pizza-parametrs{
+    width: 426px;
+    height: 556px;
+}
+
+.pizza-parametrs__text{
+    width: 100%;
+    height: 184px;
+    padding: 0px, 16px, 0px, 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #292929;
+    margin-bottom: 8px;
+}
+
+.text-description{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #535353;
+    margin-bottom: 8px;
+}
+
+.pizza-structure{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535353;
+    
+}
+
+.text-information{
+    margin-bottom: 24px;
+}
+
+.choose-block{
+    background-color: #F3F4F6;
+    width: 394px;
+    height: 44px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.choose-size{
+    background-color: #F3F4F6;
+    color: #637083;
+    border: 0;
+    width: 130px;
+    height: 40px;
+    border-radius: 14px;
+    padding: 10px, 16px, 10px, 16px;
+    transition: opacity 0.3s ease;
+}
+
+.choose-size.active{
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    width: 130px;
+    height: 40px;
+    border-radius: 14px;
+    padding: 10px, 16px, 10px, 16px;
+}
+
+.pizza-parametrs__additives{
+    margin-bottom: 24px;
+}
+
+.pizza-parametrs__additives__subtitle{
+    margin-left: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #292929;
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.pizza-parametrs__additives-container{
+    width: 426px;
+    height: 236px;
+    padding: 8px, 0px, 0px, 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

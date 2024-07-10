@@ -1,0 +1,35 @@
+.supplement-card{
+    height: 192px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(26, 26, 30, 0.15);
+}
+
+.supplement-photo{
+    width: 108px;
+    height: 108px;
+    margin-bottom: 12px;
+}
+
+.supplement-name{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 4px;
+}
+
+.supplement-price{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #292929;
+    margin-bottom: 8px;
+}
+
+.add-basket{
+    box-sizing: border-box;
+}

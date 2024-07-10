@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 960px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+
+.select-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4511E;
+    border-radius: 16px;
+    height: 56px;
+    padding: 16px 32px 16px 32px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pizza-photo{
+    width: 220px;
+    height: 220px;
+}

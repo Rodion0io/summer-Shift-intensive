@@ -1,0 +1,10 @@
+.pizza-section{
+    width: 1440px;
+}
+
+.pizza-container{
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
