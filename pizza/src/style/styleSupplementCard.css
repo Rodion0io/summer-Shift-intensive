@@ -4,6 +4,7 @@
     padding: 8px;
     background-color: #FFFFFF;
     box-shadow: 0 4px 15px rgba(26, 26, 30, 0.15);
+    margin-bottom: 11px;
 }
 
 .supplement-photo{
@@ -32,4 +33,5 @@
 
 .add-basket{
     box-sizing: border-box;
+    width: 426px;
 }

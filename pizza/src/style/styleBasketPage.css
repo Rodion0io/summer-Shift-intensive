@@ -1,0 +1,31 @@
+.basket-container{
+    margin-left: 240px;
+    border: 1px solid #000;
+}
+
+.order-result{
+    width: 960px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.text-result{
+    width: 608px;
+    height: 32px;
+}
+
+.cost{
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.price{
+    display: inline-block;
+}
+
+.order-btn{
+    width: 328px;
+}

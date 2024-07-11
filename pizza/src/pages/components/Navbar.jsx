@@ -21,7 +21,7 @@ function Navbar(){
                         <div className="first-links">
                             <div className="linkk">
                                 <img src={humanLogo} alt="" className="link-icon"/>
-                                <a href="#" className="link-text">Профиль</a>
+                                <a href="/" className="link-text">Профиль</a>
                             </div>
                             <div className="link">
                                 <img src={clockLogo} alt="" className="link-icon"/>
@@ -31,7 +31,7 @@ function Navbar(){
                         <div className="second-links">
                             <div className="linkk">
                                 <img src={basketLogo} alt="" className="link-icon"/>
-                                <a href="#" className="link-text">Корзина</a>
+                                <a href="/basket" className="link-text">Корзина</a>
                             </div>
                             <div className="link">
                                 <img src={exitLogo} alt="" className="link-icon"/>

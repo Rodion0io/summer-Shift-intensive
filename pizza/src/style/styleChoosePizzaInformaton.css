@@ -1,0 +1,93 @@
+.order-card{
+    height: 62.59px;
+    width: 1018px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-photo{
+    width: 63.72px;
+    height: 62.59px;
+}
+
+.order-name{
+    width: 120px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #141C24;
+}
+
+.order-description{
+    width: 280px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #141C24;
+}
+
+.count-block{
+    width: 124px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.bar{
+    width: 100px;
+    height: 36px;
+    background-color: #F3F4F6;
+    border-radius: 14px;
+    padding: 10px, 16px, 10px, 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bar-settings{
+    width: 74px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minus{
+    height: 20px;
+}
+
+.plus{
+    height: 21px;
+}
+
+.change-order{
+    width: 100px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.52px;
+    color: #97A1AF;
+    background-color: #fff;
+    border: 0;
+    text-decoration: underline;
+}
+
+.order-cost{
+    width: 160px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #141C24;
+    display: flex;
+    align-items: center;
+}
+
+.delete-order{
+    width: 24px;
+    height: 24px;
+}

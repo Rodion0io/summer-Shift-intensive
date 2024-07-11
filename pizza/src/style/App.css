@@ -18,7 +18,7 @@
     height: 56px;
     padding: 16px 32px 16px 32px;
     color: #fff;
-    text-decoration: none;
+    border: 0;
 }
 
 .pizza-photo{

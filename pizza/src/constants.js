@@ -1,0 +1,1 @@
+export const URL = "https://shift-backend.onrender.com/pizza/catalog";
