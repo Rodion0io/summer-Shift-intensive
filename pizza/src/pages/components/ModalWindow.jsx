@@ -7,6 +7,9 @@ import "../../style/styleSupplementCard.css"
 function ModalWindow({active, setActive, pizzaName, pizzaPhoto, description, toppingsArray, id}){
 
     const [currentCondition, updateCondition] = useState(0);
+    let arrayTopping = [];
+    let arrayInformation = [];
+    
 
     return (
         <>
@@ -23,7 +26,7 @@ function ModalWindow({active, setActive, pizzaName, pizzaPhoto, description, top
                             <div className="pizza-parametrs__text">
                                 <div className="text-information">
                                     <h2 className="title">{pizzaName}</h2>
-                                    <p className="text-description">30 см, традиционное тесто</p>
+                                    <p className="text-description">{`${currentCondition == 0 ? "25см" : currentCondition == 1 ? "30см" : "35см"}, традиционное тесто`}</p>
                                     <p className="pizza-structure">{description}</p>
                                 </div>
                                 <div className="choose-block">
@@ -47,7 +50,7 @@ function ModalWindow({active, setActive, pizzaName, pizzaPhoto, description, top
                                 </div>
                                 
                             </div>
-                            <button href="#" className="select-btn add-basket">Добавить в корзину</button>
+                            <button href="#" className="select-btn add-basket" >Добавить в корзину</button>
                         </div>
                     </div>
                 </div>

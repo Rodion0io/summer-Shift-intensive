@@ -1,6 +1,5 @@
 .basket-container{
     margin-left: 240px;
-    border: 1px solid #000;
 }
 
 .order-result{
@@ -28,4 +27,19 @@
 
 .order-btn{
     width: 328px;
+}
+
+.chosen-pizza-block{
+    margin-bottom: 24px;
+}
+
+.line{
+    width: 960px;
+    border: 1px solid #E3E5E5;
+    margin-bottom: 24px;
+}
+
+.enter{
+    color: #FFF;
+    text-decoration: none;
 }
