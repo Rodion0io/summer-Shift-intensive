@@ -7,9 +7,10 @@ import axios from "axios";
 import { getPizza } from "../api/getPizza";
 import { useState, useEffect } from "react";
 import { URL } from "../constants";
+import ModalWindow from "./components/ModalWindow";
 
 
-function MainPage(){
+function MainPage({updateState}){
 
     const [pizzaData, getPizzaDate] = useState([]);
 
@@ -23,6 +24,8 @@ function MainPage(){
         toppingsArray.push(element.toppings);
     });
 
+    
+
     return (
         <>
         <Navbar/>
@@ -35,11 +38,12 @@ function MainPage(){
                 pizzaName={data.name}
                 pizzaPhoto={`https://shift-backend.onrender.com${data.img}`}
                 description={data.description}
-                pizzaPrice={`${data.sizes[0].price} ₽`}
+                pizzaPrice={`${data.sizes[0].price}`}
                 toppingsArray={toppingsArray[data.id - 1]}
-                id={data.id}
+                id={data.id} 
+                updateState={updateState}   
                 />
-            ))}
+            ))}         
           </div>
         </div>
       </section>

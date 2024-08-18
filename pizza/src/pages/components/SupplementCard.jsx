@@ -1,9 +1,24 @@
-import cheese from "../../assets/photos/chez.png"
+import { useEffect, useState } from "react";
 
-function SupplementCard({toppingsPhoto, toppingsName, toppingsPrice, id}){
+function SupplementCard({id, toppingsPhoto, toppingsName, toppingsPrice, currentModalWindowStatus, toppingStatus, changeToppingStatus}){
+
+    let nameClass = "supplement-card";
+
+    const clickHandle = () => {
+        changeToppingStatus(id);
+    }
+
+    useEffect(() => {
+        if (!toppingStatus){
+            nameClass = "supplement-card";
+        }
+        else{
+            nameClass = "supplement-card selected";
+        }
+    }, [toppingStatus]);
 
     return (
-        <div className="supplement-card">
+        <div className={nameClass} onClick={() => clickHandle()}>
             <div className="card-container">
                 <img src={toppingsPhoto} alt="" className="supplement-photo" />
                 <div className="supplement-information">

@@ -1,38 +1,62 @@
 import Navbar from "./components/Navbar";
-import "../style/styleBasketPage.css"
+import "../style/styleBasketPage.css";
 import ChoosePizzaInformation from "./components/ChoosePizzaInformation";
+import { useEffect, useState } from "react";
+import photo from "../assets/photos/pizz.png"
+ 
+function BasketPage({ selectedPizzaInformation }) {
 
+    const [pizzasArray, setPizzasArray] = useState([]);
 
-function BasketPage(){
+    useEffect(() => {
+        if (selectedPizzaInformation != null && selectedPizzaInformation != undefined) {
+            setPizzasArray([...pizzasArray, selectedPizzaInformation]);
+        }
+    }, [selectedPizzaInformation]);
 
-    const listOrders = [];
+    console.log(pizzasArray);
+    
+    const calcCost = () => {
+        let cost = 0;
+        pizzasArray.forEach(basketElement => cost += parseInt(basketElement.price));
+        return cost;
+    }
 
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar/>
 
-            <section className="order">
+            <section className={pizzasArray.length === 0 ? "order none" : "order"}>
                 <div className="basket-container">
                     <div className="chosen-pizza-block">
-                        <ChoosePizzaInformation></ChoosePizzaInformation>
-                        <ChoosePizzaInformation></ChoosePizzaInformation>
+                        {pizzasArray.map((data, index) => (
+                            <ChoosePizzaInformation
+                                key={index}
+                                photo={data.pizzaPhoto}
+                                title={data.pizzaName}
+                                descripion={data.description}
+                                price={data.price}
+                                size={data.size}
+                                toppings={data.toppin}
+                            />
+                        ))}
                     </div>
 
                     <div className="line"></div>
 
                     <div className="order-result">
                         <div className="text-result">
-                            <h2 className="cost">Стоимость заказа:</h2>
-                            <h2 className="price">1240 р</h2>
+                            <h2 className="cost">{`Стоимость заказа: ${calcCost()}`}</h2>
+                            <h2 className="price"></h2>
                         </div>
-                        <button className="select-btn order-btn" >
+                        <button className="select-btn order-btn">
                             <a href="/data" className="enter">Оформить заказ</a>
                         </button>
                     </div>
                 </div>
             </section>
         </>
-    )
+    );
 }
 
 export default BasketPage;

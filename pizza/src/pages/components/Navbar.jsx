@@ -11,17 +11,20 @@ function Navbar(){
             <div className="container">
                 <nav className="navbar">
                     <div className="logo">
-                        <div className="title">
-                            <p className="shft-text">ШИФТ</p>
-                            <p className="shift-pizza">PIZZA</p>
-                        </div>
-                        <div className="circle"></div>
+                        <a href="/" className="link-logo">
+                            <div className="title">
+                                <p className="shft-text">ШИФТ</p>
+                                <p className="shift-pizza">PIZZA</p>
+                            </div>
+                            <div className="circle"></div>
+                        </a>
+                        
                     </div>
                     <div className="links">
                         <div className="first-links">
                             <div className="linkk">
                                 <img src={humanLogo} alt="" className="link-icon"/>
-                                <a href="/" className="link-text">Профиль</a>
+                                <a href="#" className="link-text">Профиль</a>
                             </div>
                             <div className="link">
                                 <img src={clockLogo} alt="" className="link-icon"/>

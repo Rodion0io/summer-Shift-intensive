@@ -7,6 +7,10 @@
     margin-bottom: 11px;
 }
 
+.selected{
+    background-color: #F3F4F6;
+}
+
 .supplement-photo{
     width: 108px;
     height: 108px;

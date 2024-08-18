@@ -1,19 +1,21 @@
-import pizz from "../../assets/photos/pizz.png"
 import cross from "../../assets/icon/BlackCross.svg"
 import "../../style/styleChoosePizzaInformaton.css"
 import { useState } from "react"
+import { DOUGH } from "../../constants";
+import PizzaCard from "./PizzaCard";
 
 
-function ChoosePizzaInformation({photo, title, size, toppings}){
+function ChoosePizzaInformation({photo, title, descripion, price, size, toppings}){
 
     const [count, countUpdate] = useState(1);
+    const pizzSize = size === 0 ? "Маленькая 25см" : size === 1 ? "Средняя 30см" : "Большая 35см"
 
     return (
         <>
             <div className="order-card">
-                <img src={pizz} alt="" className="order-photo" />
-                <p className="order-name">Двойной цыпленок</p>
-                <p className="order-description">Средняя 30 см, традиционное тесто + моцарелла, халапеньо</p>
+                <img src={photo} alt="" className="order-photo" />
+                <p className="order-name">{title}</p>
+                <p className="order-description">{`${pizzSize}, ${DOUGH}`}<br />{toppings.length != 0 ? "+ " +  toppings.map(topping => topping.name.toLowerCase()).join(', ') : " "}</p>
                 <div className="count-block">
                     <div className="bar">
                         <div className="bar-settings">
@@ -24,7 +26,7 @@ function ChoosePizzaInformation({photo, title, size, toppings}){
                     </div>
                 </div>
                 <button className="change-order">Изменить</button>
-                <p className="order-cost">{`${620 * count} р`}</p>
+                <p className="order-cost">{`${parseInt(price) * count} ₽`}</p>
                 <img src={cross} alt="" className="delete-order" />
             </div>
         </>
